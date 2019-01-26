@@ -1,4 +1,4 @@
-#To be inserted at 802254cc
+#To be inserted at 80019608
 ################################################################################
 # Function: ExiTransferBuffer
 # Inject @ 800055f0
@@ -11,7 +11,10 @@
 ################################################################################
 .include "Common.s"
 
-# Store stack frame
+# the line we're replacing
+  stwu sp, -0x0008(sp)
+
+# Store stack frame  
   backup
 
   mr r3, sp
@@ -23,7 +26,3 @@ Exit:
 #restore registers and sp
   restore
 
-#restore code
-  lis	r3, 0x804A
-  subi r7, r3, 1536
-  lwz	r0, -0x6C98 (r13)
