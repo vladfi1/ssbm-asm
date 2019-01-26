@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "areIncludesRelativeFromFile": true
+  },
+  "outputFiles": [
+    {
+      "file": "GALE01r2.ini",
+      "header": [
+        "# GALE01 - Super Smash Bros. Melee NTSC 1.02",
+        "",
+        "[Gecko]"
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "name": "Test Inject",
+      "authors": [
+        "Fizzi",
+        "xpilot"
+      ],
+      "description": [
+        "Test"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "Codes",
+          "isRecursive": true
+        }
+      ]
+    }
+  ]
+}
