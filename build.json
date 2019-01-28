@@ -5,22 +5,17 @@
   "outputFiles": [
     {
       "file": "GALE01r2.ini",
-      "header": [
-        "# GALE01 - Super Smash Bros. Melee NTSC 1.02",
-        "",
-        "[Gecko]"
-      ]
     }
   ],
   "codes": [
     {
-      "name": "Test Inject",
+      "name": "DMA Read Before Poll",
       "authors": [
         "Fizzi",
         "xpilot"
       ],
       "description": [
-        "Test"
+        "Does a DMA read on the EXI device in slot B before polling controllers."
       ],
       "build": [
         {

@@ -14,15 +14,13 @@
 # the line we're replacing
   stwu sp, -0x0008(sp)
 
-# Store stack frame  
-  backup
-
+# do stuff
   mr r3, sp
   li r4, 0
   li r5, 0
   branchl r12, FN_EXITransferBuffer
 
 Exit:
-#restore registers and sp
-  restore
+# restore contents of r3
+  li r3,0
 
