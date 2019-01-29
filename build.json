@@ -24,6 +24,22 @@
           "isRecursive": true
         }
       ]
+    },
+    {
+      "name": "Speed Hack",
+      "authors": [
+        "taukhan"
+      ],
+      "description": [
+        "inserts poll read call right before they're transformed into game-engine"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "SpeedHack",
+          "isRecursive": true
+        }
+      ]
     }
   ]
 }
